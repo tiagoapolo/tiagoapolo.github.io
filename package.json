@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/tiagoapolo/tiagoapolo.github.io",
+  "homepage": "https://tiagoapolo.github.io",
   "dependencies": {
     "ajv": "^6.5.3",
     "gh-pages": "^1.2.0",
