@@ -1,0 +1,97 @@
+.full-header{
+    height: 100vh;
+    /* background-color: red; */
+}
+
+.bg { 
+    /* The image used */
+    background-image: url("http://localhost:3000/images/bg.jpg");
+    /* background-color: white; */
+
+    /* Full height */
+    height: 35vh; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.middle{
+    width: 100%;
+}
+
+.profile{
+    /* max-width: 10em;
+    max-height: 10em; */
+    text-align: right;
+}
+
+.bar{
+    width: 100%;
+    height: 54px;
+    /* background: blue; */
+    border: 1px solid #0000001f;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.bar > ul {
+    display: inline-flex;
+    list-style: none;
+    padding-right: 5%;
+}
+
+.bar > ul >  li {
+    padding-left: 1em;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+.bar > ul >  li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.avatar{
+    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+    background-image: url("http://localhost:3000/images/profile.jpg");
+
+    /* make a square container */
+    width: 10em;
+    height: 10em;
+
+    margin-top: -6em;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: top center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+
+    margin-left: auto;
+    margin-right: 10em;
+
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+.av-right{
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.av-left{
+    margin-left: 10%;
+    margin-right: auto;
+}
