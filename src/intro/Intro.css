@@ -5,7 +5,7 @@
 
 .bg { 
     /* The image used */
-    background-image: url("/bg.jpg");
+    background-image: url("/images/bg.jpg");
     /* background-color: white; */
 
     /* Full height */
@@ -62,7 +62,7 @@
 
 .avatar{
     /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
-    background-image: url("/profile.jpg");
+    background-image: url("/images/profile.jpg");
 
     /* make a square container */
     width: 10em;
