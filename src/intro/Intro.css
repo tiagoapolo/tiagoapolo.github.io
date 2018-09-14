@@ -95,3 +95,19 @@
     margin-left: 10%;
     margin-right: auto;
 }
+
+.animate-move{
+    transition: transform 100ms ease-in-out;
+    transform: translateY(-15px) scale(0.25,0.25);    
+}
+
+.animate-back{
+    transition: transform 100ms ease-in-out;
+    transform: translateY(0px) scale(1,1);    
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+}

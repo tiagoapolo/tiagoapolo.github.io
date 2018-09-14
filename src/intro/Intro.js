@@ -3,8 +3,19 @@ import './Intro.css';
 
 class Intro extends Component {
 
+    constructor(props) {
+        super(props);
+        // Don't call this.setState() here!
+        this.state = { isAnimationActive: false };
+        console.log(this.state.isAnimationActive)
+    }
 
-  render() {
+    handleClick(){        ``
+        this.setState({ isAnimationActive: !this.state.isAnimationActive })
+        console.log(this.state.isAnimationActive)
+    }
+
+    render() {
     return (
       <section className="Intro">
         <div className="top bg"></div>
@@ -33,7 +44,7 @@ class Intro extends Component {
                         </li>
                     </ul>
                 </div>
-                <div className="avatar av-left"></div>
+                <div onClick={this.handleClick.bind(this)} className={["avatar", "av-left", this.state.isAnimationActive ? 'animate-move': 'animate-back'].join(' ')}></div>
             </div>
         </div>
         {/* <div className="bottom"> */}
