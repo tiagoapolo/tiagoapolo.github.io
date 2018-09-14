@@ -5,7 +5,7 @@ class Intro extends Component {
 
     constructor(props) {
         super(props);
-        // Don't call this.setState() here!
+
         this.state = { 
             isAnimationActive: false,
             isNavbar: false,
@@ -13,7 +13,6 @@ class Intro extends Component {
     }
 
     getNavTopDistance(el) {
-        // console.log('isBottom ', el.getBoundingClientRect(), window.scrollY)
         return el.getBoundingClientRect().bottom;
     }
       
