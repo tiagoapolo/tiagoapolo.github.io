@@ -10,12 +10,6 @@ class Intro extends Component {
             isAnimationActive: false,
             isNavbar: false,
         };
-        console.log(this.state.isAnimationActive)
-    }
-
-    handleClick(){       
-        
-        console.log(this.state.isAnimationActive)
     }
 
     getNavTopDistance(el) {
@@ -24,12 +18,15 @@ class Intro extends Component {
     }
       
     componentDidMount() {
-        document.addEventListener('scroll', this.trackScrolling.bind(this));
+        
+        document.addEventListener('scroll', this.trackScrolling.bind(this));                
+
     }
     
     componentWillUnmount() {
         document.removeEventListener('scroll', this.trackScrolling.bind(this));
     }
+
       
     trackScrolling = () => {
 
@@ -67,10 +64,8 @@ class Intro extends Component {
                     id="info-bar"
                 >
                     <ul>
-                        <li><a href="www.google.com">Recent Work</a></li>
-                        {/* <li><a href="www.google.com">Artigos</a></li> */}
-                        <li><a href="www.google.com">Contact</a></li>
-                        {/* <li><a href="www.google.com"><FontAwesomeIcon icon="github"/></a></li> */}
+                        {/* <li><a href="" rel="noopener noreferrer">Recent Work</a></li> */}
+                        {/* <li style={{cursor: 'pointer'}}>Contact</li> */}
                         <li>
                             <a href="https://github.com/tiagoapolo" target="_blank" rel="noopener noreferrer">
                                 <i style={{ fontSize: 'large', paddingLeft: '1em' }} className="fab fa-github"></i>
@@ -88,7 +83,7 @@ class Intro extends Component {
                         </li>
                     </ul>
                 </div>
-                <div onClick={this.handleClick.bind(this)} className={[ 
+                <div className={[ 
                         "avatar", 
                         "av-left", 
                         this.state.isAnimationActive ? 'animate-move': 'animate-back',

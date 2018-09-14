@@ -13,7 +13,7 @@ class App extends Component {
         <header>
           <Intro></Intro>
         </header>
-        <div style={{ height: 680, width: '100%' }}></div>
+        {/* <div style={{ height: 680, width: '100%' }}></div> */}
       </div>
     );
   }
