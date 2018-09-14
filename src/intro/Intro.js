@@ -6,26 +6,70 @@ class Intro extends Component {
     constructor(props) {
         super(props);
         // Don't call this.setState() here!
-        this.state = { isAnimationActive: false };
+        this.state = { 
+            isAnimationActive: false,
+            isNavbar: false,
+        };
         console.log(this.state.isAnimationActive)
     }
 
-    handleClick(){        ``
-        this.setState({ isAnimationActive: !this.state.isAnimationActive })
+    handleClick(){       
+        
         console.log(this.state.isAnimationActive)
     }
+
+    getNavTopDistance(el) {
+        // console.log('isBottom ', el.getBoundingClientRect(), window.scrollY)
+        return el.getBoundingClientRect().bottom;
+    }
+      
+    componentDidMount() {
+        document.addEventListener('scroll', this.trackScrolling.bind(this));
+    }
+    
+    componentWillUnmount() {
+        document.removeEventListener('scroll', this.trackScrolling.bind(this));
+    }
+      
+    trackScrolling = () => {
+
+        const navbarElement = document.getElementById('marker');
+
+        console.log(this.getNavTopDistance(navbarElement), window.scrollY)
+
+        if(this.getNavTopDistance(navbarElement) <= 32){
+            
+            this.setState({ isAnimationActive: true })
+
+            if(this.getNavTopDistance(navbarElement) <= 0){
+                this.setState({ isNavbar: true })
+            } else {
+                this.setState({ isNavbar: false })
+            }
+
+        } else {
+            this.setState({ isAnimationActive: false })
+            this.setState({ isNavbar: false })
+        }
+
+    };
 
     render() {
     return (
       <section className="Intro">
-        <div className="top bg"></div>
+        <div className="top bg" style={{ marginBottom: (this.state.isNavbar ? '12%': '0') }} id="marker"></div>
         <div className="middle">
             <div className="profile">
-                <div className="bar">
+                <div className={[ 
+                        "bar", 
+                        this.state.isNavbar ? 'navbar': 'non-navbar'
+                    ].join(' ')}
+                    id="info-bar"
+                >
                     <ul>
-                        <li><a href="www.google.com">Trabalhos</a></li>
-                        <li><a href="www.google.com">Artigos</a></li>
-                        <li><a href="www.google.com">Contato</a></li>
+                        <li><a href="www.google.com">Recent Work</a></li>
+                        {/* <li><a href="www.google.com">Artigos</a></li> */}
+                        <li><a href="www.google.com">Contact</a></li>
                         {/* <li><a href="www.google.com"><FontAwesomeIcon icon="github"/></a></li> */}
                         <li>
                             <a href="https://github.com/tiagoapolo" target="_blank" rel="noopener noreferrer">
@@ -44,12 +88,27 @@ class Intro extends Component {
                         </li>
                     </ul>
                 </div>
-                <div onClick={this.handleClick.bind(this)} className={["avatar", "av-left", this.state.isAnimationActive ? 'animate-move': 'animate-back'].join(' ')}></div>
+                <div onClick={this.handleClick.bind(this)} className={[ 
+                        "avatar", 
+                        "av-left", 
+                        this.state.isAnimationActive ? 'animate-move': 'animate-back',
+                        this.state.isNavbar ? 'avatar-fixed': 'navbar-relative'
+                    ].join(' ')}
+                    id="av"
+                >
+                </div>
             </div>
         </div>
-        {/* <div className="bottom"> */}
-            {/* <h4>asijdoaijdoadjidjodias oaidjaoijdaoija aoijdaosijd</h4> */}
-        {/* </div> */}
+        <div className="bottom">
+            <div className="intro-title">
+                <h2>I'm Tiago</h2>
+                <div className="divider"></div>
+                <h4>
+                    A Software Engineer passionate for <b>Cloud Infraestructure</b> and <b>Software Dev</b> with <b>4+ years</b> of experience obtained from the financial, 
+                    automotive and telecom industries and bootstrapping an Accounts Payable Automation Software Startup in Chile.
+                </h4>
+            </div>
+        </div>
       </section>
     );
   }
