@@ -50,7 +50,7 @@ class Intro extends Component {
 
     render() {
     return (
-      <section className="Intro">
+      <section className="Intro full-header">
         <div className="top bg" style={{ marginBottom: (this.state.isNavbar ? '12%': '0') }} id="marker"></div>
         <div className="middle">
             <div className="profile">

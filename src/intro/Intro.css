@@ -1,6 +1,5 @@
 .full-header{
-    height: 100vh;
-    /* background-color: red; */
+    min-height: 90vh;
 }
 
 .bg { 

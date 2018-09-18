@@ -1,5 +1,43 @@
-.macbook > img{
-    width: 50%;
+.full-header{
+    /* height: 100vh; */
+    /* background-color: red; */
+}
+
+.container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.card{
+   width: 20em;
+   height: 14em;
+   background-color: #364d79;
+   margin: 1%;
+   border: 1px solid black;
+   border-radius: 10px;    
+
+   
+}
+
+.logo {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.logo > div  > img{
+    width: 60%;
+    
+}
+
+.logo > div> .unio {
+    width: 30%;
+    border-radius: 8px;
 }
 
 /* .gift{
