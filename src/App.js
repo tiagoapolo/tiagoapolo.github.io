@@ -16,7 +16,7 @@ class App extends Component {
         </header>
         {/* <div style={{ height: 680, width: '100%' }}></div> */}
         <div>
-          <Testout></Testout>
+          {/* <Testout></Testout> */}
         </div>
       </div>
     );

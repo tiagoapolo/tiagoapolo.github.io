@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Testout.css';
 
+
 class Testout extends Component {
 
 
@@ -16,9 +17,6 @@ class Testout extends Component {
         this.listImages = this.state.images.map(image => <div key={image.toString()}>oaisdjaoijoiadsj</div>)
         
     }
-
-    
-    
 
 
     componentDidMount() {
