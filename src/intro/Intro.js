@@ -31,8 +31,6 @@ class Intro extends Component {
 
         const navbarElement = document.getElementById('marker');
 
-        console.log(this.getNavTopDistance(navbarElement), window.scrollY)
-
         if(this.getNavTopDistance(navbarElement) <= 32){
             
             this.setState({ isAnimationActive: true })
