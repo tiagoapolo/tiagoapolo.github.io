@@ -61,20 +61,18 @@ class Intro extends Component {
                     id="info-bar"
                 >
                     <ul>
-                        {/* <li><a href="" rel="noopener noreferrer">Recent Work</a></li> */}
-                        {/* <li style={{cursor: 'pointer'}}>Contact</li> */}
                         <li>
-                            <a href="https://github.com/tiagoapolo" target="_blank" rel="noopener noreferrer">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
                                 <i style={{ fontSize: 'large', paddingLeft: '1em' }} className="fab fa-github"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/tiagoapolo" target='_blank' rel="noopener noreferrer">
+                            <a href="#" target='_blank' rel="noopener noreferrer">
                                 <i style={{ fontSize: 'large', color: '#1DA1F2' }} className="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="http://linkedin.com/in/tiago-fonseca/" target='_blank' rel="noopener noreferrer">
+                            <a href="#" target='_blank' rel="noopener noreferrer">
                                 <i style={{ fontSize: 'large', color: '#0077B5' }} className="fab fa-linkedin"></i>
                             </a>
                         </li>
@@ -93,11 +91,10 @@ class Intro extends Component {
         </div>
         <div className="bottom">
             <div className="intro-title">
-                <h2>I'm Tiago</h2>
+                <h2>I'm John</h2>
                 <div className="divider"></div>
                 <h4>
-                    A Software Engineer passionate for <b>Cloud Infraestructure</b> and <b>Software Dev</b> with <b>4+ years</b> of experience obtained from the financial, 
-                    automotive and telecom industries and bootstrapping an Accounts Payable Automation Software Startup in Chile.
+                    Hard-working construction worker, seeking to deliver fast, high quality work for Jandreau Construction. Have worked as Skid Steer operator, parking lot construction laborer, and temp construction helper for various construction firms. Commended five times by management for strong work ethic.                    
                 </h4>
             </div>
         </div>
