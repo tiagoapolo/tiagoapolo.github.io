@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import './Articles.css'
 
 
 class Info extends Component {
+
+  apiArticleUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40tiagoapolo%2F'
 
   constructor(){
     super();
@@ -30,29 +33,45 @@ class Info extends Component {
     let tiagoapolo = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40tiagoapolo%2F'
 
     data = tiagoapolo
+
+    this.getArticles()
     
-    fetch(data)
-    .then(results => {
-      return results.json()
-    }).then(data => {
+
+  }
+
+  getArticles(){
+
+    fetch(this.apiArticleUrl)
+    .then(results => results.json()).then(data => {
       console.log(data.items)
-      let posts = data.items.map(post => {
+      let posts = [0,1,2,3,4,5,6,7,8].map(post => {
         return (
-          <a key={data.items} href={post.link} target="_blank">
-            <h1><a href={post.link}>{post.title}</a></h1>
-            <img src={post.thumbnail}/>
-          </a>
+
+          <div className="article-card">
+            <div className="article-header">
+            je
+            </div>
+            <div className="article-content">
+            suis
+            </div>            
+          </div>
+
+          // <a key={data.items} href={post.link} target="_blank">
+          //   <h1><a href={post.link}>{post.title}</a></h1>
+          //   <img src={post.thumbnail}/>
+          // </a>
         )
       })
 
       this.setState({posts: posts})
 
     })
+
   }
   
   render() {
     return (
-      <div className="Info box">
+      <div className="Articles">
         {this.state.posts}
       </div>
     );

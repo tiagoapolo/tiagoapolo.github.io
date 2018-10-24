@@ -1,0 +1,23 @@
+.Articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-card{
+    width: 20em;
+    height: 14em;
+    background-color: #364d79;
+    border: 1px solid black;
+    border-radius: 10px;  
+    margin: auto auto 1%;
+}
+
+
+.article-header{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+/* .article-card:last-child:nth-child(odd){ */
+    /* margin: 1%; */
+/* } */
