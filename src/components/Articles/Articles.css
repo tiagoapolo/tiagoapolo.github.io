@@ -18,6 +18,10 @@
     margin-top: 1em;
 }
 
+.article-content img {
+    width: 90%;
+}
+
 /* .article-card:last-child:nth-child(odd){ */
     /* margin: 1%; */
 /* } */

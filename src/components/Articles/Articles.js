@@ -44,15 +44,15 @@ class Info extends Component {
     fetch(this.apiArticleUrl)
     .then(results => results.json()).then(data => {
       console.log(data.items)
-      let posts = [0,1,2,3,4,5,6,7,8].map(post => {
+      let posts = data.items.map(post => {
         return (
 
           <div className="article-card">
             <div className="article-header">
-            je
+              <a href={post.link}>{post.title}</a>
             </div>
             <div className="article-content">
-            suis
+              <img src={post.thumbnail}/>
             </div>            
           </div>
 
