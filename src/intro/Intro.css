@@ -1,5 +1,6 @@
 .full-header{
     min-height: 90vh;
+    margin-bottom: -2em;
 }
 
 .bg { 
@@ -114,6 +115,7 @@
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
+    z-index: 1000;
 }
 
 .non-navbar{
@@ -127,6 +129,7 @@
     margin-top: -25px;
     top: 0;
     overflow: hidden;
+    z-index: 1000;
 }
 
 .avatar-relative{
