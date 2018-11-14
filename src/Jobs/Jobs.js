@@ -30,37 +30,19 @@ class Jobs extends Component {
     render() {
     return (
       <div className="full-header">
-        <div className="container">
-            <div className="card">
-                <div className="logo">
-                    <div>
-                        <img src="/images/telefonica.png"/>
-                    </div>
+        <div className="container">           
+            <section className="timeline_entry">
+                <h1>TESTE 1</h1>
+                <div className="multiline">
+                    • Implemented DevOps strategies creating Kubernetes clusters and automated pipelines to reduce deployment time and friction. • Developed a support ticket activity monitoring mobile app to help managers reduce their time to action by 30% to assure the quality of service in the B2B internet provider sector. • Designed and implemented a project management dashboard to enable a distributed lab personnel work on remote projects and managers to track the project's daily activities Tech Stack: NodeJS, Angular 6, ReactJS, MongoDB, ParseDB, RabbitMQ, Docker, OpenStack, Docker, Swagger, Kubernetes.
                 </div>
-            </div>
-            
-            <div className="card">
-                <div className="logo">
-                    <div>
-                        <img src="/images/facturedo.png"/>
-                    </div>                
+            </section>
+            <section className="timeline_entry_2">
+                <h1>TESTE 1</h1>
+                <div className="multiline">
+                    • Implemented DevOps strategies creating Kubernetes clusters and automated pipelines to reduce deployment time and friction. • Developed a support ticket activity monitoring mobile app to help managers reduce their time to action by 30% to assure the quality of service in the B2B internet provider sector. • Designed and implemented a project management dashboard to enable a distributed lab personnel work on remote projects and managers to track the project's daily activities Tech Stack: NodeJS, Angular 6, ReactJS, MongoDB, ParseDB, RabbitMQ, Docker, OpenStack, Docker, Swagger, Kubernetes.
                 </div>
-            </div>
-            <div className="card">
-                <div className="logo">
-                    <div>
-                        <img className="unio" src="/images/unio.png"/>
-                    </div>                
-                </div>                
-            </div>
-            <div className="card">
-                <div className="logo">
-                    <div>
-                        <img className="unio" style={{borderRadius: '0'}} src="/images/volvo.png"/>
-                    </div>                
-                </div>                
-            </div>
-            
+            </section>
         </div>
         {/* <div className="container">
             
@@ -71,3 +53,5 @@ class Jobs extends Component {
 }
 
 export default Jobs;
+
+

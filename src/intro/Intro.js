@@ -96,8 +96,7 @@ class Intro extends Component {
                 <h2>I'm Tiago</h2>
                 <div className="divider"></div>
                 <h4>
-                    A Software Engineer passionate for <b>Cloud Infraestructure</b> and <b>Software Dev</b> with <b>4+ years</b> of experience obtained from the financial, 
-                    automotive and telecom industries and bootstrapping an Accounts Payable Automation Software Startup in Chile.
+                    <b>Software Developer</b> passionate about web development and cloud infrastructure with 5+ years of experience from the R&D field developing innovative solutions for the financial, automotive and telecom industries and bootstrapping an accounts payable automation software startup in Chile.                    
                 </h4>
             </div>
         </div>

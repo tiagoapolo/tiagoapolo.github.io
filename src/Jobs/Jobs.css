@@ -6,8 +6,18 @@
 .container{
     width: 100%;
     justify-content: center;
-    display: flex;
-    flex-wrap: wrap;    
+    /* display: flex; */
+    /* flex-wrap: wrap;     */
+}
+
+.timeline_entry {
+    padding-left: 48px;
+    margin-left: 50%;
+}
+
+.timeline_entry_2 {
+    padding-right: 48px;
+    margin-right: 50%;
 }
 
 .card{
@@ -72,3 +82,6 @@
   .ant-carousel .slick-slide h3 {
     color: #fff;
   }
+
+
+  @media
