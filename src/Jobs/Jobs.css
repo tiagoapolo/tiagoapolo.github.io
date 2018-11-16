@@ -13,30 +13,31 @@
     bottom: 0;
     width: 4px;
     margin-left: -2px;
-    background: #F2F3F5;
+    background: #ececec;
     border-radius: 2px;
 } */
 
-section.timeline_entry::before {
+.timeline_entry::before {
     content: '';
     position: absolute;
     left: 50%;
-    top: 93%;
-    bottom: -8%;
+    top: 104%;
+    bottom: -10%;
     width: 4px;
     margin-left: -2px;
-    background: #9e9e9e38;
+    background: #ececec;
     border-radius: 2px;
+    
 }
 
-section.timeline_entry:last-child::before {
+.timeline_entry:last-child::before {
     content: none;
 }
 
 .timeline_entry{
     padding-left: 2em;
     padding-right: 2em;
-    padding-bottom: 4em;
+    padding-bottom: 0;
     padding-top: 4em;
     position: relative;
 }
@@ -81,10 +82,38 @@ section.timeline_entry:last-child::before {
     color: #7E8595;
 }
 
+.experience-logo{
+    padding-top: 4em;
+}
+
 @media only screen and (min-width: 768px) {
 
-    section.timeline_entry::before {
+    .experience-logo{
+        padding-top: 1em;
+    }
+
+    .timeline_entry::before {
         content: none;
+    } 
+    
+
+    .timeline_entry > section::before {
+        content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDEiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA0MSAxMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGZpbGw9IiNGOEM5QjkiIHk9IjQiIHdpZHRoPSIzNCIgaGVpZ2h0PSIyIiByeD0iMSIvPjxwYXRoIGQ9Ik0zNiAxMGMtMi43NiAwLTctNS03LTVzNC4yNC01IDctNWE1IDUgMCAwIDEgMCAxMHoiIGZpbGw9IiNFQTYzMzUiLz48L2c%2BPC9zdmc%2B);
+        position: absolute;       
+        right: -53px;
+        top: 11px 
+    }
+
+    .timeline_entry:nth-child(odd) > section::before{
+        left: -53px;
+        right: auto;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .timeline_entry > section {
+        max-width: 420px;        
+        position: relative;
     }
 
     .timeline::before {
@@ -95,7 +124,7 @@ section.timeline_entry:last-child::before {
         bottom: 0px;
         width: 4px;
         margin-left: -2px;
-        background: #9e9e9e38;
+        background: #ececec;
         border-radius: 2px;
     }
 
@@ -107,11 +136,10 @@ section.timeline_entry:last-child::before {
     .timeline_entry:nth-child(even) {
         padding-right: 48px;
         margin-right: 50%;
+        display: flex;
+        justify-content: flex-end;
+        /* padding-right: 34em; */
     }
 
-    .timeline_entry_2 {
-        padding-right: 48px;
-        margin-right: 50%;  
-    }
 
 }

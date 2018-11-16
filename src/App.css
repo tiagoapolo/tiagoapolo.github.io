@@ -7,6 +7,20 @@
   font-size: large;
 }
 
+
+footer{
+  height: 3em;
+  background-color: #EEEEEE;
+  display: flex;
+  align-items: center;
+}
+
+footer > span{
+  width: 100%;
+  color: #5a5a5a;
+  font-size: 14px;
+}
+
 .bottom-copy{
 
   /* margin-top: ; */
