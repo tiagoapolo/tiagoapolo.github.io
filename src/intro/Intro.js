@@ -78,6 +78,11 @@ class Intro extends Component {
                                 <i style={{ fontSize: 'large', color: '#0077B5' }} className="fab fa-linkedin"></i>
                             </a>
                         </li>
+                        <li>
+                            <a href="/files/tiago-paiva-resume.pdf" target='_blank' title="Tiago's Resume" rel="noopener noreferrer">
+                                <i style={{ fontSize: 'large', color: '#bf360c' }} className="fas fa-file-pdf"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div className={[ 
@@ -96,7 +101,7 @@ class Intro extends Component {
                 <h2>I'm Tiago</h2>
                 <div className="divider"></div>
                 <h4>
-                    <b>Software Developer</b> passionate about web development and cloud infrastructure with 5+ years of experience from the R&D field developing innovative solutions for the financial, automotive and telecom industries and bootstrapping an accounts payable automation software startup in Chile.                    
+                    <b>Software Developer</b> passionate about web development and front end technologies with 5+ years of experience from the R&D field developing innovative solutions for the financial, automotive and telecom industries and bootstrapping an accounts payable automation software startup in Chile.                    
                 </h4>
             </div>
         </div>

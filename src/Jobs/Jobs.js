@@ -55,7 +55,7 @@ class Jobs extends Component {
                     <div className="jobdate">APR 2017 – NOV 2017</div>
                     <div className="multiline">
                         <p>• Led the remote development team while working on the Mexico rollout, managing activities and providing business requirements.</p>
-                        <p>• Developed the first release of the mobile app responsible of creating a marketplace that helped sellers and investors get through factoring effectively and without hassle. Also managed the rollout of the app in Peru.</p>                        
+                        <p>• Developed the first release of the mobile app responsible of creating a marketplace that helped sellers and investors get through factoring effectively and without hassle. Also managed the rollout of the app in Peru.</p>                             
                         <p>Tech Stack: NodeJS, Typescript, Angular 5, Ionic 3, RxJS, AWS SQS, AWS SNS, AWS Mobile HUB.</p>
                     </div>
                 </section>
